@@ -3,6 +3,6 @@ var tournament = require('./test/tournament')
     , ChallBot = require('./players/challengerBot')
     , challenger = MachinePoker.seats.JsLocal.create(ChallBot);
 
-var table = tournament.createTable(challenger, {hands:1});
+var table = tournament.createTable(challenger, {hands:4});
 table.addObserver(MachinePoker.observers.narrator);
 table.start();
